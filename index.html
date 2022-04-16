@@ -1,0 +1,201 @@
+<!--I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jossy Bijo, Web Developer</title>
+  <link href="https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<script type="text/javascript">
+  function getValue(radio) {
+    if (radio.value == 'hiring') {
+      document.getElementById("hourly_rate").style.display = "block";
+    } else {
+      document.getElementById("hourly_rate").style.display = "none";
+    }
+  }
+</script>
+
+<body>
+  <main>
+		<div class="academicdeclaration">
+				  <p><i>I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. No part of this assessment has been copied manually or electronically from any other source (including web sites) except for the information supplied by the WEB222 instructors and / or made available in this assessment for my use. I also declare that no part of this assignment has been distributed to other students.</i></p>
+				  <p></i>- Jossy Bijo</i></h4>
+		</div>
+    <!-- ***************  ABOUT / PROFILE  **************** -->
+    <header>
+      <nav id="menu">
+      </nav>
+      <div class="content-wrap">
+        <img src="images/pic11.jpeg" alt="">
+        <h1>Jossy Bijo</h1>
+        <h2>Web Developer</h2>
+
+        <p>Recently graduated IT professional with advanced expertise in html, CSS, JavaScript and Python. Very much
+          eager to tackle web development/design challenges to achieve lasting impacts on User Experience.</p>
+        <p>I am also trying to improve my skills in photography <a href="photography.html" target="_blank">Just a
+            photography start up</a></p>
+			
+			<!--the download button-->
+			<button class="downloadResume"><a href="resume.docx" 
+                download="resume.docx" target="blank">DOWNLOAD MY RESUME</a></button>
+      </div>
+    </header>
+
+
+
+    <!-- ****************  WORK EXPERIENCE  ******************** -->
+    <section class="work-experience">
+      <div class="content-wrap item-details divider">
+        <h2>Work Experience</h2>
+
+        <!-- Job 1 -->
+        <section class="job-item">
+          <div class="job-details">
+            <h3>Front-end Developer & Educator</h3>
+            <p>Freelance</p>
+          </div>
+          <div class="job-summary">
+            <p>Provides various front-end related services ranging like development work, providing framework with html,
+              styling with css and user experience.</p>
+          </div>
+        </section>
+
+        <!-- *************  EDUCATION & CERTIFICATIONS *********** -->
+        <section class="education">
+          <div class="content-wrap item-details">
+            <h2>Education</h2>
+            <section>
+              <div class="container">
+                <div class="education-year">
+                  <h5>2020 - 2023 (Expected)</h5>
+                  <h3>College</h3>
+                </div>
+                <div class="content">
+                  <div class="blue">
+                    <h3>Seneca College</h3>
+                    <p>Computer Programming and Analysis, 2023</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              <div class="container">
+                <div class="education-year">
+                  <h5>2018 - 2020</h5>
+                  <h3>Higher Secondary</h3>
+                </div>
+                <div class="content">
+                  <div class="blue">
+                    <h3>Indian School Al Seeb, Oman</h3>
+                    <p>Higher Secondary School, 2020</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+        <!-- <div class="divstyle"><p>hi</div></p> -->
+
+
+        <!-- Informations about me -->
+        <section class="myinfo">
+          <div class="content-wrap divider">
+            <h2>Information about Me</h2>
+            <div class="infobox">
+              <div class="leftbox">
+                <h3>*About Me</h3>
+                <p>Graduating from Seneca College in Canada. Jossy Bijo landed in a successful career as a front-end web
+                  developer. She considers herself as a 'forever student' following the traditional web development and
+                  designing techniques as well as exploring the new technologies which are brought in the market.
+				  
+				 
+              </div>
+              <div class="rightbox">
+                <h3>Basic Information</h3>
+                <p>Name: Jossy Bijo</p>
+                <p>Age: 20</p>
+                <p>Email: jbijo@myseneca.ca</p>
+                <p>Languages: English, Hindi, Malayalam, Arabic</p>
+                <p>Class Section: NCC</p>
+                <p>Student ID: 144939204</p>
+                <p>Student Advisor: Mr. Mark Meritt</p>
+				<h3>Date:</h3><div id="current_date">
+						<script>
+						document.getElementById("current_date").innerHTML = Date();
+						</script></p>
+              </div>
+            </div>
+        </section>
+      </div>
+
+
+      <!-- ************  CONTACT INFO / SOCIAL MEDIA  ************ -->
+      <footer>
+        <div class="content-wrap">
+          <h2>Let's Keep in Touch!</h2>
+
+          <!-- Social media and contact links. Add or remove any networks. -->
+          <ul class="contact-list">
+            <li><a href="mailto:jbijo@myseneca.ca">jbijo@myseneca.ca</a></li>
+            <li><a href="https://www.instagram.com/jossybijo/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/jossy-bijo-3b0a9221b/" target="_blank">LinkedIn</a></li>
+          </ul>
+
+          <form class="details-form" action="https://httpbin.org/post" method="POST">
+            <p>Please fill out the details below It will take about 2 to 3 days business days to get back.</p>
+            <div class="form-inputs">
+              <label for="fname">First name:</label>
+              <input type="text" id="fname" name="fname" required><br><br>
+              <label for="lname">Last name:</label>
+              <input type="text" id="lname" name="lname" required><br><br>
+              <label for="email">Email:</label>
+              <input type="text" id="email" name="email" required><br><br>
+              <label for="phone">Phone:</label>
+              <input type="text" id="phone" name="phone" required><br><br>
+              <label for="email">Address:</label>
+              <input type="text" id="address" name="address" required><br><br>
+              <label for="city">City:</label>
+              <input type="text" id="city" name="city" required><br><br>
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+              </select><br><br>
+              <label for="postalCode">Postal Code:</label>
+              <input type="text" id="postalCode" name="postalCode" required><br><br>
+              <p>Please select what this is about:</p>
+              <div class="radio-buttons">
+                <input type="radio" id="question" name="hourly_rate" value="question" onchange="getValue(this)">
+                <label for="html">Question</label><br>
+                <input type="radio" id="comment" name="hourly_rate" value="comment" onchange="getValue(this)">
+                <label for="css">Comment</label><br>
+                <input type="radio" id="hiring" name="hourly_rate" value="hiring" onchange="getValue(this)">
+                <label for="javascript">Hiring</label>
+              </div>
+              <div class="hourly-rate" id="hourly_rate">
+                <label for="hourly_rate" id="hourly_rate_label">Hourly Rate:</label>
+                <input type="text" name="hourly_rate">
+              </div>
+              <label class="textarea" for="comments">Comments:</label>
+              <textarea type="text" id="comments" name="comments" rows="5" cols="50"></textarea><br><br>
+              <div class="submit-button">
+                <input class="submit-button" type="submit" value="Submit">
+              </div>
+            </div>
+			</form>
+          </form>
+        </div>
+      </footer>
+  </main>
+</body>
+
+</html>
