@@ -1,0 +1,370 @@
+/*
+COLOR PALETTE
+https://coolors.co/03045e-023e8a-0077b6-0096c7-00b4d8-48cae4-90e0ef-ade8f4-caf0f8
+*/
+#menu {
+  text-align: center;
+}
+
+.academicdeclaration{
+	background: #03045E;
+	color: white;
+}
+
+/* photography
+------------------------------------*/
+.bgcolor {
+  background: #0096C7;
+  position: absolute;
+}
+
+/*download button*/
+.downloadResume{
+	background: #90E0EF;
+}
+
+/* card style */
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 380px;
+  margin: 13px;
+  border-radius: 10px;
+  text-align: center;
+  padding-bottom: 1px;
+  float: left;
+  background: #caf0f8;
+}
+
+.title {
+  font-size: 3px;
+}
+
+.details {
+  padding: 5px;
+  font-size: 5px;
+}
+
+.card-image {
+  border-radius: 10px 10px 0 0;
+}
+
+/* Global styles
+------------------------------------*/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: #03045e;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  height: auto;
+  width: 100%;
+}
+
+img {
+  width: 280px;
+}
+
+a {
+  color: #0077b6;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 100px;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 45px;
+}
+
+h1,
+h2 {
+  font-family: 'Caveat', cursive;
+  font-weight: 400;
+  margin: 0;
+}
+
+.content-wrap {
+  width: 100%;
+  margin: 0 auto;
+  padding: 3% 3%;
+}
+
+h3 {
+  margin-bottom: 0;
+}
+
+.item-details h3+p {
+  font-style: italic;
+}
+
+.item-details h3~p {
+  margin: 0;
+}
+
+.divider>section {
+  border-bottom: 1px dashed #343434;
+}
+
+.divider>section:last-of-type {
+  border-bottom: none;
+}
+
+
+/* Profile
+------------------------------------*/
+header {
+  background: #2F3061;
+  color: #F7FFF7;
+  text-align: center;
+  height: auto;
+  width: 100%;
+}
+
+/*-- Informations about me --*/
+.myinfo {
+  background: #90E0EF;
+  display: flex;
+  margin: right 0;
+  grid-template-columns: auto;
+
+}
+
+.leftbox {
+  background: #90E0EF;
+  width: 50%;
+  height: auto;
+  float: left;
+  text-align: left;
+
+}
+
+.rightbox {
+  background: #90E0EF;
+  width: 50%;
+  height: auto;
+  float: right;
+  text-align: left;
+  padding-left: 5%;
+}
+
+
+/* Work Experience
+------------------------------------*/
+.work-experience {
+  background: #A1C6D7;
+  position: absolute;
+}
+
+.work-experience h2 {
+  text-align: center;
+}
+
+.job-item {
+  display: grid;
+  grid-template-columns: auto;
+  column-gap: 0.3px;
+}
+
+
+/* Education
+------------------------------------*/
+.divstyle {
+  background: #F7FFF7;
+  width: 50%;
+}
+
+.education {
+  background: #00B4D8;
+  grid-template-columns: auto;
+  margin: 0;
+  background-size: cover;
+}
+
+.education .container {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  margin-bottom: 10px;
+}
+
+.education .content {
+  padding: 5% 3%;
+  background-color: #F7FFF7;
+}
+
+.education .education-year {
+  background-color: #213f6c;
+  color: #F7FFF7;
+  text-align: center;
+  padding: 30px;
+
+}
+
+
+
+/* Contact Info
+------------------------------------*/
+footer {
+  background: #CAF0F8;
+  color: black;
+  background: cover;
+  height: auto;
+}
+
+.details-form {
+  width: fit-content;
+  margin: auto;
+}
+
+.form-inputs {
+  width: fit-content;
+  margin: auto;
+}
+
+.form-inputs label {
+  width: 120px;
+  display: inline-block
+}
+
+.form-inputs input {
+  width: 230px;
+  display: inline-block
+}
+
+.form-inputs textarea {
+  width: 230px;
+  display: inline-block
+}
+
+.form-inputs select {
+  width: 230px;
+  height: 22px;
+}
+
+.form-inputs .radio-buttons,
+.form-inputs .radio-buttons input {
+  display: flex;
+  width: fit-content;
+}
+
+.radio-buttons label {
+  width: 90px;
+}
+
+.hourly-rate {
+  display: none;
+  margin-bottom: 12px;
+}
+
+.submit-button {
+  width: fit-content;
+  margin: auto;
+  height: 32px;
+}
+
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-list a {
+  padding: 15px;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 80px;
+    line-height: 1;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  .title {
+    font-size: 2px;
+  }
+
+  .details {
+    padding: 3px;
+    font-size: 4px;
+  }
+
+  body {
+    color: #03045e;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    height: auto;
+    width: 100%;
+  }
+
+  img {
+    width: 160px;
+  }
+
+  .education .container {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    margin-bottom: 10px;
+  }
+
+  .education .content {
+    padding: 4% 4%;
+    background-color: #F7FFF7;
+  }
+
+  .education .education-year {
+    background-color: #213f6c;
+    color: #F7FFF7;
+    text-align: center;
+    padding: 30px;
+
+  }
+
+  .form-inputs label {
+    width: 100px;
+    display: inline-block
+  }
+
+  .form-inputs input {
+    width: 194px;
+    display: inline-block
+  }
+
+  .form-inputs textarea {
+    width: 194px;
+    display: inline-block
+  }
+
+  .form-inputs select {
+    width: 194px;
+    height: 22px;
+  }
+
+  .form-inputs {
+    width: 300px;
+    margin: auto;
+  }
+}
